@@ -2,12 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: changelogapp
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  description: Repositório contendo o changelog do projeto.
+  annotations:
+    github.com/project-slug: GustavoCunh4/changelogapp
+    backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: service
+  lifecycle: production
+  owner: equipe
+  links:
+    - url: https://github.com/GustavoCunh4/changelogapp/blob/main/changelogapp/CHANGELOG.md
+      title: Changelog
+      icon: book
